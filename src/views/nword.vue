@@ -1,11 +1,17 @@
 <template>
-    <div class="flex flex-row min-h-screen justify-center items-center">
-        <router-link to="/j/" tag="button">
-            <h1 class="bg-blue-500 p-3 rounded-[50px] text-white">
-                pindah ke Jword
-            </h1>
-        </router-link>
+    <div class="min-h-screen justify-center items-center m-2">
+        <div class="flex flex-row items-center justify-center gap-3">
+            <Jword></Jword>
+            <Nword></Nword>
+        </div>
+        <div class="w-full md:w-[40%] mx-auto">
+            <Score></Score>
+        </div>
     </div>
 </template>
 
-<script></script>
+<script setup>
+import Score from '../components/api-data.vue'
+import Jword from '../components/jword-button.vue'
+import Nword from '../components/nword-button.vue'
+</script>
